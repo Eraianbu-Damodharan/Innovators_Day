@@ -84,3 +84,53 @@ LockDownBrowserOEMSetup.exe - 103.48 MB - C:\Users\eraia\Downloads\LockDownBrows
 [2026-03-25 23:01:10] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
 [2026-03-25 23:09:52] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
 [2026-03-25 23:10:11] INPUT=hey jarvis | TOOL=general_chat | ARGS={'text': 'hey jarvis'} | RESULT=Hey! How can I assist you?
+[2026-03-25 23:20:41] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 23:22:30] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 23:22:57] INPUT=open folder document | TOOL=open_folder | ARGS={'path': 'document'} | RESULT=Access denied. Folder is outside allowed directories.
+[2026-03-25 23:23:03] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-25 23:30:47] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-25 23:31:01] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 23:33:21] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opened Spotify search for open.
+[2026-03-25 23:35:03] INPUT=play music | TOOL=open_spotify | ARGS={'query': 'music'} | RESULT=Opened Spotify search for music.
+[2026-03-25 23:35:37] INPUT=open bluetooth settings | TOOL=open_bluetooth_settings | ARGS={} | RESULT=Opened Bluetooth settings.
+[2026-03-25 23:36:06] INPUT=post on linkedin | TOOL=general_chat | ARGS={'text': 'post on linkedin'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 23:36:14] INPUT=open linkedin | TOOL=open_linkedin | ARGS={} | RESULT=Opened LinkedIn.
+[2026-03-25 23:39:14] INPUT=scan storage | TOOL=general_chat | ARGS={'text': 'scan storage'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 23:39:34] INPUT=open folder documents\jarvis | TOOL=open_folder | ARGS={'path': 'documents\\jarvis'} | RESULT=Opened folder: C:\Users\eraia\OneDrive\Documents\Jarvis
+[2026-03-25 23:40:15] INPUT=list documents | TOOL=general_chat | ARGS={'text': 'list documents'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 23:48:47] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:49:18] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-25 23:49:25] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opening Spotify
+[2026-03-25 23:50:20] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:50:33] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:51:25] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:52:04] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:53:18] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:53:44] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Bringing Notepad to front
+[2026-03-25 23:55:24] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-25 23:55:37] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:56:51] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:57:27] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-25 23:59:27] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-26 00:00:25] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-26 00:00:45] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opening Spotify
+[2026-03-26 00:00:46] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-26 00:01:22] INPUT=create folder desktop\baal | TOOL=general_chat | ARGS={'text': 'create folder desktop\\baal'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:01:44] INPUT=create folder jarvis\baal | TOOL=general_chat | ARGS={'text': 'create folder jarvis\\baal'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:03:32] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-26 00:03:59] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opening Notepad
+[2026-03-26 00:04:23] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-26 00:04:53] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Bringing Notepad to front
+[2026-03-26 00:05:16] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-26 00:05:28] INPUT=hey jarvis | TOOL=general_chat | ARGS={'text': 'hey jarvis'} | RESULT=Hey! How can I assist you?
+[2026-03-26 00:05:42] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opening Spotify
+[2026-03-26 00:21:35] INPUT=calculator. | TOOL=general_chat | ARGS={'text': 'calculator.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:21:45] INPUT=calculator. | TOOL=general_chat | ARGS={'text': 'calculator.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:22:01] INPUT=1. | TOOL=general_chat | ARGS={'text': '1.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:22:12] INPUT=open calculator. | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-26 00:22:35] INPUT=notepad. | TOOL=general_chat | ARGS={'text': 'notepad.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:22:53] INPUT=notepad. | TOOL=general_chat | ARGS={'text': 'notepad.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:23:20] INPUT=open calculator. | TOOL=open_calculator | ARGS={} | RESULT=Opening Calculator
+[2026-03-26 00:23:37] INPUT=notepad. | TOOL=general_chat | ARGS={'text': 'notepad.'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-26 00:23:50] INPUT=notepad. open notepad. | TOOL=open_notepad | ARGS={} | RESULT=Bringing Notepad to front
+[2026-03-26 00:24:05] INPUT=45 open spotify. | TOOL=open_spotify | ARGS={'query': '45 open .'} | RESULT=Opening Spotify

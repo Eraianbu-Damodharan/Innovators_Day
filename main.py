@@ -5,11 +5,45 @@ from utils.logger import log_action
 from voice.speech_to_text import SpeechRecognizer
 from voice.text_to_speech import speak
 
+# Initialize once so both CLI and Flask can use the same backend
+llm = LocalLLM(model="phi3")
+router = LLMRouter(llm)
+dispatcher = ToolDispatcher()
+
+
+def handle_text_command(user_text: str) -> str:
+    """
+    Process a text command from frontend or any other source.
+    """
+    try:
+        spoken_text = user_text.strip().lower()
+
+        if not spoken_text:
+            return "Could not understand."
+
+        if spoken_text in {"exit", "quit", "stop"}:
+            return "Goodbye."
+
+        tool_data = router.route(spoken_text)
+        print("Tool data:", tool_data)
+
+        result = dispatcher.dispatch(tool_data)
+
+        log_action(
+            user_input=spoken_text,
+            tool=tool_data.get("tool", ""),
+            args=str(tool_data.get("args", {})),
+            result=result
+        )
+
+        return str(result)
+
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+
 def main():
-    llm = LocalLLM(model="phi3")
-    router = LLMRouter(llm)
-    dispatcher = ToolDispatcher()
-    recognizer = SpeechRecognizer()  # change if needed
+    recognizer = SpeechRecognizer()
 
     print("Hello. I am your Jarvis assistant.")
     print("Press ENTER to speak, or type 'exit' to quit.\n")
@@ -29,24 +63,13 @@ def main():
                 print("Assistant: Could not understand.")
                 continue
 
-            if spoken_text in {"exit", "quit", "stop"}:
-                print("Assistant: Goodbye.")
-                break
-
-            tool_data = router.route(spoken_text)
-            print("Tool data:", tool_data)
-
-            result = dispatcher.dispatch(tool_data)
-
-            log_action(
-                user_input=spoken_text,
-                tool=tool_data.get("tool", ""),
-                args=str(tool_data.get("args", {})),
-                result=result
-            )
+            result = handle_text_command(spoken_text)
 
             print(f"Assistant: {result}")
             speak(result)
+
+            if spoken_text in {"exit", "quit", "stop"}:
+                break
 
         except KeyboardInterrupt:
             print("\nAssistant: Shutting down.")
@@ -54,6 +77,7 @@ def main():
         except Exception as e:
             print("Error:", e)
             break
+
 
 if __name__ == "__main__":
     main()
