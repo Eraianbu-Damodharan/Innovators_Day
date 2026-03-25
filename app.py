@@ -167,7 +167,6 @@ button {
 </div>
 
 <script>
-
 /* ---------------- PARTICLE ---------------- */
 const canvas = document.getElementById("particleCanvas");
 const ctx = canvas.getContext("2d");
@@ -175,6 +174,7 @@ const ctx = canvas.getContext("2d");
 let listening = false;
 let recognition = null;
 let isRecognizing = false;
+let voices = [];
 
 function resize(size){
     canvas.width = size;
@@ -201,16 +201,16 @@ function draw(){
     let time = Date.now()*0.002;
 
     particles.forEach(p=>{
-        p.angle += p.speed*(listening?2:1);
+        p.angle += p.speed*(listening ? 2 : 1);
 
-        let breathe = Math.sin(time)*10;
-        let r = p.baseRadius + breathe + (listening?15:0);
+        let breathe = Math.sin(time) * 10;
+        let r = p.baseRadius + breathe + (listening ? 15 : 0);
 
-        let x = cx + Math.cos(p.angle)*r;
-        let y = cy + Math.sin(p.angle)*r;
+        let x = cx + Math.cos(p.angle) * r;
+        let y = cy + Math.sin(p.angle) * r;
 
         ctx.fillStyle = "#67e8f9";
-        ctx.fillRect(x,y,2,2);
+        ctx.fillRect(x, y, 2, 2);
     });
 }
 
@@ -219,6 +219,70 @@ function animate(){
     requestAnimationFrame(animate);
 }
 animate();
+
+/* ---------------- VOICES ---------------- */
+function loadVoices() {
+    voices = window.speechSynthesis.getVoices();
+}
+
+loadVoices();
+window.speechSynthesis.onvoiceschanged = loadVoices;
+
+function getPreferredMaleVoice() {
+    if (!voices || voices.length === 0) return null;
+
+    const preferredNames = [
+        "Google UK English Male",
+        "Microsoft David",
+        "Microsoft Mark",
+        "Microsoft George",
+        "Microsoft Guy",
+        "Alex",
+        "Daniel",
+        "David",
+        "Mark"
+    ];
+
+    for (const name of preferredNames) {
+        const voice = voices.find(v => v.name.toLowerCase().includes(name.toLowerCase()));
+        if (voice) return voice;
+    }
+
+    let maleHint = voices.find(v =>
+        v.name.toLowerCase().includes("male") &&
+        v.lang.toLowerCase().startsWith("en")
+    );
+    if (maleHint) return maleHint;
+
+    let englishVoice = voices.find(v => v.lang.toLowerCase().startsWith("en"));
+    if (englishVoice) return englishVoice;
+
+    return voices[0];
+}
+
+function speakResponse(text) {
+    if (!("speechSynthesis" in window)) {
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    const selectedVoice = getPreferredMaleVoice();
+
+    if (selectedVoice) {
+        utterance.voice = selectedVoice;
+        utterance.lang = selectedVoice.lang;
+    } else {
+        utterance.lang = "en-IN";
+    }
+
+    utterance.rate = 0.95;
+    utterance.pitch = 0.75;
+    utterance.volume = 1;
+
+    window.speechSynthesis.speak(utterance);
+}
 
 /* ---------------- SPEECH RECOGNITION ---------------- */
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -311,7 +375,7 @@ function toggleMic(){
 async function sendMessage(){
     const input = document.getElementById("input");
     const chat = document.getElementById("chat");
-    
+
     let text = input.value.trim();
     if(!text) return;
 
@@ -339,7 +403,9 @@ async function sendMessage(){
 
         let data = await res.json();
         let fullText = data.response || "No response from Jarvis.";
+
         speakResponse(fullText);
+
         let i = 0;
         function type(){
             if(i < fullText.length){
@@ -356,13 +422,6 @@ async function sendMessage(){
 
     chat.scrollTop = chat.scrollHeight;
 }
-
-function speakResponse(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-IN";
-    window.speechSynthesis.speak(utterance);
-}
-
 </script>
 
 </body>
