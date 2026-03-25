@@ -1,0 +1,86 @@
+[2026-03-24 15:49:17] INPUT=hi | TOOL=general_chat | ARGS={'text': 'hi'} | RESULT=Hello! How can I help you?
+[2026-03-24 15:49:35] INPUT=open calculated | TOOL=general_chat | ARGS={'text': 'open calculated'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:49:50] INPUT=calculate that | TOOL=general_chat | ARGS={'text': 'calculate that'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:50:01] INPUT=calculated | TOOL=general_chat | ARGS={'text': 'calculated'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:50:12] INPUT=open the archuleta | TOOL=general_chat | ARGS={'text': 'open the archuleta'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:50:36] INPUT=nothing | TOOL=general_chat | ARGS={'text': 'nothing'} | RESULT=Hello! How can I help you?
+[2026-03-24 15:50:58] INPUT=open calculator | TOOL=general_chat | ARGS={'text': 'open calculator'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:56:02] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-24 15:56:13] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-24 15:56:23] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-24 15:56:38] INPUT=open chrome | TOOL=open_chrome | ARGS={} | RESULT=Opened Chrome.
+[2026-03-24 15:56:56] INPUT=open file explorer | TOOL=open_file_explorer | ARGS={} | RESULT=Opened File Explorer.
+[2026-03-24 15:57:12] INPUT=open bluetooth settings | TOOL=open_bluetooth_settings | ARGS={} | RESULT=Opened Bluetooth settings.
+[2026-03-24 15:57:29] INPUT=open bluetooth settings | TOOL=open_bluetooth_settings | ARGS={} | RESULT=Opened Bluetooth settings.
+[2026-03-24 15:57:53] INPUT=bluetooth settings | TOOL=open_bluetooth_settings | ARGS={} | RESULT=Opened Bluetooth settings.
+[2026-03-24 15:58:07] INPUT=open bluetooth | TOOL=general_chat | ARGS={'text': 'open bluetooth'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 15:58:38] INPUT=open instagram | TOOL=open_instagram | ARGS={} | RESULT=Opened Instagram.
+[2026-03-24 15:58:49] INPUT=open instagram | TOOL=open_instagram | ARGS={} | RESULT=Opened Instagram.
+[2026-03-24 15:59:35] INPUT=open linkedin | TOOL=open_linkedin | ARGS={} | RESULT=Opened LinkedIn.
+[2026-03-24 16:00:40] INPUT=play relaxed music on spotify | TOOL=open_spotify | ARGS={'query': 'relaxed music'} | RESULT=Opened Spotify search for relaxed music.
+[2026-03-24 16:02:06] INPUT=show me junk files in downloads | TOOL=scan_temp_files | ARGS={'location': 'downloads'} | RESULT=No temporary files found in C:\Users\eraia\Downloads.
+[2026-03-24 16:02:16] INPUT=show me large files in downloads | TOOL=scan_large_files | ARGS={'location': 'downloads', 'min_size_mb': 100} | RESULT=Large files found:
+DaVinci_Resolve_20.1.1_Windows.zip - 2928.69 MB - C:\Users\eraia\Downloads\DaVinci_Resolve_20.1.1_Windows.zip
+flutter_windows_3.35.7-stable.zip - 1680.11 MB - C:\Users\eraia\Downloads\flutter_windows_3.35.7-stable.zip
+android-studio-2025.2.2.8-windows.exe - 1372.02 MB - C:\Users\eraia\Downloads\android-studio-2025.2.2.8-windows.exe
+hadoop-3.4.1.tar.gz - 928.88 MB - C:\Users\eraia\Downloads\hadoop-3.4.1.tar.gz
+mysql-enterprise-9.4.0_el10_x86_64_bundle.tar - 706.08 MB - C:\Users\eraia\Downloads\mysql-enterprise-9.4.0_el10_x86_64_bundle.tar
+580.97-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe - 675.0 MB - C:\Users\eraia\Downloads\580.97-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe
+mysql-installer-community-8.0.43.0.msi - 354.25 MB - C:\Users\eraia\Downloads\mysql-installer-community-8.0.43.0.msi
+Unconfirmed 471290.crdownload - 297.15 MB - C:\Users\eraia\Downloads\Unconfirmed 471290.crdownload
+VID_20250821_182124989.mp4 - 249.13 MB - C:\Users\eraia\Downloads\VID_20250821_182124989.mp4
+MSB.exe - 231.96 MB - C:\Users\eraia\Downloads\MSB.exe
+GitHubDesktopSetup-x64.exe - 169.03 MB - C:\Users\eraia\Downloads\GitHubDesktopSetup-x64.exe
+jdk-21_windows-x64_bin.exe - 164.42 MB - C:\Users\eraia\Downloads\jdk-21_windows-x64_bin.exe
+eclipse-inst-jre-win64.exe - 157.69 MB - C:\Users\eraia\Downloads\eclipse-inst-jre-win64.exe
+VSCodeUserSetup-x64-1.108.1.exe - 118.64 MB - C:\Users\eraia\Downloads\VSCodeUserSetup-x64-1.108.1.exe
+DiscordSetup.exe - 114.69 MB - C:\Users\eraia\Downloads\DiscordSetup.exe
+VSCodeUserSetup-x64-1.103.2.exe - 109.57 MB - C:\Users\eraia\Downloads\VSCodeUserSetup-x64-1.103.2.exe
+LockDownBrowserOEMSetup.exe - 103.48 MB - C:\Users\eraia\Downloads\LockDownBrowserOEMSetup.exe
+[2026-03-24 16:03:55] INPUT=delete C:\Users\eraia\Downloads\mysql-installer-community-8.0.43.0.msi | TOOL=general_chat | ARGS={'text': 'delete C:\\Users\\eraia\\Downloads\\mysql-installer-community-8.0.43.0.msi'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-24 16:04:12] INPUT=hih | TOOL=general_chat | ARGS={'text': 'hih'} | RESULT=Hello! How can I help you?
+[2026-03-24 16:04:24] INPUT=who are you | TOOL=general_chat | ARGS={'text': 'who are you'} | RESULT=I am your Jarvis assistant. I can help with storage, web actions, settings, and general chat.
+[2026-03-24 16:06:35] INPUT=play weeknd on spotify | TOOL=open_spotify | ARGS={'query': 'weeknd'} | RESULT=Opened Spotify search for weeknd.
+[2026-03-24 16:09:25] INPUT=open bluetooth settings | TOOL=open_bluetooth_settings | ARGS={} | RESULT=Opened Bluetooth settings.
+[2026-03-24 16:12:34] INPUT=open instagram | TOOL=open_instagram | ARGS={} | RESULT=Opened Instagram.
+[2026-03-24 16:14:01] INPUT=i tell whether the | TOOL=general_chat | ARGS={'text': 'i tell whether the'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:40:41] INPUT=hi | TOOL=general_chat | ARGS={'text': 'hi'} | RESULT=Hello! How can I help you?
+[2026-03-25 14:41:20] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opened Spotify search for open.
+[2026-03-25 14:41:50] INPUT=can u please open the calculator | TOOL=general_chat | ARGS={'text': 'can u please open the calculator'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:42:02] INPUT=can u please open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-25 14:44:48] INPUT=can you open Documents\Innovators_Day | TOOL=general_chat | ARGS={'text': 'can you open Documents\\Innovators_Day'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:45:05] INPUT=can you open jarvis | TOOL=general_chat | ARGS={'text': 'can you open jarvis'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:45:15] INPUT=can you open folder jarvis | TOOL=general_chat | ARGS={'text': 'can you open folder jarvis'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:45:50] INPUT=can you open folder jarvis\chat | TOOL=general_chat | ARGS={'text': 'can you open folder jarvis\\chat'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:46:06] INPUT=open file manager | TOOL=general_chat | ARGS={'text': 'open file manager'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:47:23] INPUT=open file manager | TOOL=general_chat | ARGS={'text': 'open file manager'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 14:47:32] INPUT=open file explorer | TOOL=open_file_explorer | ARGS={} | RESULT=Opened File Explorer.
+[2026-03-25 14:48:11] INPUT=open folder jarvis | TOOL=general_chat | ARGS={'text': 'open folder jarvis'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:10:22] INPUT=open folder Document\Innovators_Day | TOOL=open_folder | ARGS={'path': 'Document\\Innovators_Day'} | RESULT=Access denied. Folder is outside allowed directories.
+[2026-03-25 15:10:41] INPUT=open folder Documents | TOOL=open_folder | ARGS={'path': 'Documents'} | RESULT=Opened folder: C:\Users\eraia\OneDrive\Documents
+[2026-03-25 15:11:06] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 15:11:12] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opened Spotify search for open.
+[2026-03-25 15:44:28] INPUT=that's unfolded | TOOL=general_chat | ARGS={'text': "that's unfolded"} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:44:43] INPUT=the and florida | TOOL=general_chat | ARGS={'text': 'the and florida'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:44:59] INPUT=oh come on friday | TOOL=general_chat | ARGS={'text': 'oh come on friday'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:45:26] INPUT=now that i'm all about that | TOOL=general_chat | ARGS={'text': "now that i'm all about that"} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:45:39] INPUT=authentic small that | TOOL=general_chat | ARGS={'text': 'authentic small that'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:46:32] INPUT=to have been low tide | TOOL=general_chat | ARGS={'text': 'to have been low tide'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 15:46:54] INPUT=hope i'm not bad | TOOL=general_chat | ARGS={'text': "hope i'm not bad"} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:40:08] INPUT=open my book | TOOL=general_chat | ARGS={'text': 'open my book'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:40:29] INPUT=it was fun to watch | TOOL=general_chat | ARGS={'text': 'it was fun to watch'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:40:41] INPUT=i hope i'm not my father | TOOL=general_chat | ARGS={'text': "i hope i'm not my father"} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:40:53] INPUT=in a little bit | TOOL=general_chat | ARGS={'text': 'in a little bit'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:41:06] INPUT=people see how can an open on | TOOL=general_chat | ARGS={'text': 'people see how can an open on'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:44:59] INPUT=open notebook | TOOL=general_chat | ARGS={'text': 'open notebook'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:47:29] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 22:48:14] INPUT=from document | TOOL=general_chat | ARGS={'text': 'from document'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:48:32] INPUT=jarvis from document | TOOL=general_chat | ARGS={'text': 'jarvis from document'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:48:44] INPUT=ramesh from document | TOOL=general_chat | ARGS={'text': 'ramesh from document'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:49:05] INPUT=open spotify | TOOL=open_spotify | ARGS={'query': 'open'} | RESULT=Opened Spotify search for open.
+[2026-03-25 22:49:33] INPUT=open folder charges | TOOL=open_folder | ARGS={'path': 'charges'} | RESULT=Access denied. Folder is outside allowed directories.
+[2026-03-25 22:51:26] INPUT=later | TOOL=general_chat | ARGS={'text': 'later'} | RESULT=I can help you manage files, open websites, control settings pages, and chat with you.
+[2026-03-25 22:51:39] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-25 23:01:10] INPUT=open notepad | TOOL=open_notepad | ARGS={} | RESULT=Opened Notepad.
+[2026-03-25 23:09:52] INPUT=open calculator | TOOL=open_calculator | ARGS={} | RESULT=Opened Calculator.
+[2026-03-25 23:10:11] INPUT=hey jarvis | TOOL=general_chat | ARGS={'text': 'hey jarvis'} | RESULT=Hey! How can I assist you?
